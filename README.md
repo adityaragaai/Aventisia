@@ -2,7 +2,14 @@
 
 A premium, modern React application for managing external knowledge bases seamlessly. Built with a focus on polished UI, responsive design, and smooth user interactions. This application allows users to orchestrate vector stores, AI models, and document knowledge bases from a centralized dashboard.
 
-![Knowledge Base UI Preview](./src/assets/react.svg) *(Replace with actual screenshot)*
+
+
+<img width="2854" height="1446" alt="image" src="https://github.com/user-attachments/assets/5540cd1e-a949-4209-8b43-2173b766553c" />
+<img width="2864" height="1467" alt="image" src="https://github.com/user-attachments/assets/9dd46b7a-b227-49b2-aa5d-c9caa0aa7e41" />
+<img width="2852" height="1435" alt="image" src="https://github.com/user-attachments/assets/651fa49c-f970-45f4-8907-812eb5739911" />
+
+
+
 
 ## 🚀 Features
 
@@ -64,4 +71,4 @@ src/
 ```
 
 ---
-*Built with ❤️ utilizing Advanced Agentic Coding practices.*
+

@@ -1,73 +1,67 @@
-# React + TypeScript + Vite
+# Aventisia Knowledge Base UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, modern React application for managing external knowledge bases seamlessly. Built with a focus on polished UI, responsive design, and smooth user interactions. This application allows users to orchestrate vector stores, AI models, and document knowledge bases from a centralized dashboard.
 
-Currently, two official plugins are available:
+![Knowledge Base UI Preview](./src/assets/react.svg) *(Replace with actual screenshot)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* **Full CRUD Functionality**: Create, Read, Update, and Delete Knowledge Bases seamlessly in real-time.
+* **Smart Search**: Find specific knowledge base cards instantly through an optimized client-side text search (filtering by Name or Description).
+* **Responsive Layout**: Designed to look and function perfectly across all devices (Desktop, Tablet, Mobile) with fluid containers.
+* **Collapsible Sidebar**: A dynamic sidebar that minimizes into a sleek icon-only view to maximize workspace real estate, complete with smooth CSS transitions.
+* **Slide-over Drawer**: A fully functional, state-driven slide-out "Create/Edit" drawer utilizing controlled form inputs and validation.
+* **Premium Typography & Aesthetics**: Incorporates modern utility-first CSS styling leveraging custom color palettes, sleek drop shadows, and web-safe Google fonts (`Inter` and `Outfit`).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technology Stack
 
-## Expanding the ESLint configuration
+* **Framework:** [React 19](https://react.dev/)
+* **Build Tool:** [Vite](https://vitejs.dev/)
+* **Language:** TypeScript
+* **Styling:** [Tailwind CSS v3](https://tailwindcss.com/)
+* **Icons:** [Lucide React](https://lucide.dev/)
+* **Utilities:** `clsx` and `tailwind-merge` for robust class string management.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📦 Installation & Setup
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+To get this project up and running locally, follow these steps:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/adityaragaai/Aventisia.git
+   cd Aventisia
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. **Install dependencies:**
+   Make sure you have Node.js installed, then run:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **View the application:**
+   Open your browser and navigate to `http://localhost:5173/`
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/          # Reusable UI components
+│   ├── CreateKBDrawer.tsx # slide-over side drawer for configuration
+│   ├── Header.tsx         # Full-width top navigation bar
+│   ├── KBCard.tsx         # Grid card representing a distinct Knowledge Base
+│   ├── Layout.tsx         # Main structural layout wrapper
+│   └── Sidebar.tsx        # Collapsible left navigation menu
+├── pages/
+│   └── KnowledgeBase.tsx  # Main page bringing together search, cards, and data
+├── App.tsx              # Router / Implementation entry
+├── main.tsx             # ReactDOM rendering root
+└── index.css            # Global CSS styles including custom Tailwind layers
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+*Built with ❤️ utilizing Advanced Agentic Coding practices.*
